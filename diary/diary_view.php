@@ -28,6 +28,9 @@ if ($public === 'only_myfriends') {
   $query .= " AND diary.username IN (SELECT friend_name FROM friend_list WHERE username = :current_user)";
 }
 
+
+$query .= " ORDER BY diary.posted_at DESC";
+
 $stmt = $pdo->prepare($query);
 
 if ($public === 'not_public' || $public === 'only_myfriends') {
