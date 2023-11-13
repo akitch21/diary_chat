@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+body {
+  font-family: 'Noto Serif JP', sans-serif;
+  background-color: #fffefd;
+  text-align: center;
+  font-size: 20px;
+}
+
+input{
+  width: 400px;
+  height: 30px;
+}
+ul {
+  list-style: none;
+}
